@@ -37,3 +37,18 @@ function hitungKeliling() {
   Keliling = ${result}
   `;
 }
+
+// Reset Nilai dan Inputan
+function resetForm(type) {
+  if (type === "resetLuas") {
+    document.getElementById("alas").value = "";
+    document.getElementById("tinggi").value = "";
+    document.getElementById("hasil-luas").innerHTML = "";
+  } else if (type === "resetKeliling") {
+    document.getElementById("sisi1").value = "";
+    document.getElementById("sisi2").value = "";
+    document.getElementById("sisi3").value = "";
+    document.getElementById("hasil-keliling").innerHTML = "";
+  } else {
+  }
+}
