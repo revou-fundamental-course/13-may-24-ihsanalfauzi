@@ -3,7 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Kalkulator Segitiga</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Bagian Header -->
+    <header>
+      <h1>Hitung Luas dan Keliling Segitiga</h1>
+      <h2>Welcome To Katik</h2>
+      <p>Selamat Datang Silahkan Untuk Mencoba !!!</p>
+    </header>
+
+    <!-- Isi Konten Start -->
+    <main class="container">
+      <!-- Section Kolom Untuk Luas Segitiga -->
+      <section class="kolom">
+        <h2>Luas Segitiga</h2>
+        <img src="luas.png" alt="Luas Segitiga" />
+        <p>Rumus: 1/2 x alas x tinggi</p>
+        <button onclick="tampilForm('luas')">Hitung Luas</button>
+      </section>
+
+      <!-- Section Kolom Untuk Keliling Segitiga -->
+      <section class="kolom">
+        <h2>Keliling Segitiga</h2>
+        <img src="luas.png" alt="Keliling Segitiga" />
+        <p>Rumus: sisi1 + sisi2 + sisi3</p>
+        <button onclick="tampilForm('keliling')">Hitung Keliling</button>
+      </section>
+    </main>
+    <!-- Isi Konten End -->
+
+    <!-- Konten Tambahan Start -->
+    <aside class="form-container">
+      <!-- Form Untuk Menghitung Luas Segitiga -->
+      <form id="form-luas" class="hidden">
+        <h3>Hitung Luas Segitiga</h3>
+        <label for="alas">Alas:</label>
+        <input type="number" id="alas" required />
+        <label for="tinggi">Tinggi:</label>
+        <input type="number" id="tinggi" required />
+        <button type="button" onclick="hitungLuas()">Hitung</button>
+        <button onclick="resetForm('resetLuas')" class="btn-reset">
+          Reset
+        </button>
+        <p id="hasil-luas"></p>
+      </form>
+
+      <!-- Form Untuk Menghitung Luas Segitiga -->
+      <form id="form-keliling" class="hidden">
+        <h3>Hitung Keliling Segitiga</h3>
+        <label for="sisi1">Sisi 1:</label>
+        <input type="number" id="sisi1" required />
+        <label for="sisi2">Sisi 2:</label>
+        <input type="number" id="sisi2" required />
+        <label for="sisi3">Sisi 3:</label>
+        <input type="number" id="sisi3" required />
+        <button type="button" onclick="hitungKeliling()">Hitung</button>
+        <button onclick="resetForm('resetKeliling')" class="btn-reset">
+          Reset
+        </button>
+        <p id="hasil-keliling"></p>
+      </form>
+    </aside>
+    <!-- Konten Tambahan End -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
