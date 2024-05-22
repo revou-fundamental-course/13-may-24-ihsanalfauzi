@@ -50,3 +50,54 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+/* Css aside atau konten tambahan */
+.form-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.form-container form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+.form-container .hidden {
+  display: none;
+}
+.form-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.form-container input {
+  padding: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container .btn-reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f42c1e;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+.form-container .btn-reset:hover {
+  background-color: #ae2614;
+}
+.form-container .btn-reset:active {
+  background-color: #ae2614;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.form-container p {
+  text-align: left;
+}
