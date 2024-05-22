@@ -12,3 +12,15 @@ function tampilForm(type) {
     formLuas.classList.add("hidden");
   }
 }
+
+// Menghitung Luas
+function hitungLuas() {
+  const alas = document.getElementById("alas").value;
+  const tinggi = document.getElementById("tinggi").value;
+  const result = 0.5 * alas * tinggi;
+  document.getElementById("hasil-luas").innerText = `
+  Luas = 1/2 x alas x tinggi
+  Luas = 1/2 x ${alas} x ${tinggi}
+  Luas = ${result} 
+  `;
+}
