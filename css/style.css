@@ -1,1 +1,52 @@
-/* CSS Kalkulator */
+/* CSS Kalkulator Menghitung Luas dan Keliling Segitiga */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(242, 240, 238);
+  margin: 0;
+  padding: 20px;
+}
+
+/* Css Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Css Main */
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .kolom {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+.container .kolom img {
+  max-width: 40%;
+  height: auto;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+}
+button:hover {
+  background-color: #0056b3;
+}
+button:active {
+  background-color: #0056b3;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
